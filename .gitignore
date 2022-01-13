@@ -1,0 +1,5 @@
+# Ignore EVERYTHING except for project readme and pom.
+*
+!.gitignore
+!README.adoc
+!pom.xml

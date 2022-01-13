@@ -1,0 +1,13 @@
+# Geomatys BOM
+
+Defines a Bill Of Materials, to centralize third-party dependency declarations in a single document.
+
+## Releases
+
+### Versions
+
+This BOM uses a calendar versioning in the form YYYY.X where :
+
+. YYYY is the current year of era, fully expressed.
+. X is a release increment number in the year.
+
