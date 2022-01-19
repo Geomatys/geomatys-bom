@@ -16,8 +16,11 @@ Some addendums are done to fit our specific needs for our products and projects.
 
 == Usage
 
-First and foremost, you have to use Spring repository:
 
+First and foremost, you have to activate two Maven repositories:
+
+1. Spring repository, to download Spring-Boot BOM which this artifact depends upon:
++
 [source, xml]
 ----
 <repository>
@@ -26,6 +29,18 @@ First and foremost, you have to use Spring repository:
   <url>https://repo.spring.io/release</url>
 </repository>
 ----
+2. The public Geomatys repository, to download the Geomatys BOM release:
++
+[source, xml]
+----
+<repository>
+  <id>geomatys.public</id>
+  <name>Geomatys public release repository</name>
+  <url>https://nexus.geomatys.com/repository/releases</url>
+</repository>
+----
+
+NOTE: If your project POM inherits this BOM, you don't have to add these repositories, because they will be inherited from the BOM.
 
 Then, there are two possible ways to apply this BOM:
 
