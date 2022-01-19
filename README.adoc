@@ -16,7 +16,18 @@ Some addendums are done to fit our specific needs for our products and projects.
 
 == Usage
 
-There are two possible ways to use this BOM:
+First and foremost, you have to use Spring repository:
+
+[source, xml]
+----
+<repository>
+  <id>spring.releases</id>
+  <name>Spring release repository</name>
+  <url>https://repo.spring.io/release</url>
+</repository>
+----
+
+Then, there are two possible ways to apply this BOM:
 
 * Either for dependency management only, in which case you can import it in your project in your *dependencyManagement*:
 +
