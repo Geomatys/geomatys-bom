@@ -23,6 +23,20 @@
     <scm>
         <url>https://github.com/geomatys/geomatys-bom</url>
     </scm>
+
+    <repositories>
+        <repository>
+            <id>spring.releases</id>
+            <name>Spring release repository</name>
+            <url>https://repo.spring.io/release</url>
+        </repository>
+        <repository>
+            <id>geomatys.public</id>
+            <name>Geomatys public release repository</name>
+            <url>https://nexus.geomatys.com/repository/releases</url>
+        </repository>
+    </repositories>
+
     <properties>
         <!--
         Temporary overrides: Versions defined in Spring BOM, but not recent enough. When updating
