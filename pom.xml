@@ -36,6 +36,15 @@
 
         <!-- JODA is used by ElasticSearch and Geotk/Examind Community. To ensure a version convergence, We freeze it here. -->
         <joda-time.version>2.10.5</joda-time.version>
+
+        <!--
+        JAI is mainly used by Geotoolkit for image processing. In the future, it might be remove if Apache SIS
+        provides sufficient replacements.
+        Note that we use JAI Core and JAI Codec, but we do not define JAI ImageIO. We avoid its use, because it uses
+        JDK internal classes (from java.base module) that are not exposed anymore since JDK 17
+        -->
+        <jai.core.version>1.1.3</jai.core.version>
+        <jai.codec.version>1.1.3</jai.codec.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -57,6 +66,17 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.media</groupId>
+                <artifactId>jai_core</artifactId>
+                <version>${jai.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.media</groupId>
+                <artifactId>jai_codec</artifactId>
+                <version>${jai.codec.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
