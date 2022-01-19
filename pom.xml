@@ -78,6 +78,31 @@
                 <artifactId>jai_codec</artifactId>
                 <version>${jai.codec.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>${groovy.version}</version>
+                <type>pom</type> <!-- See https://groovy.apache.org/download.html#buildtools -->
+                <exclusions>
+                    <!--
+                    Exclude groovy-test dependencies, we do not need them. Moreover, it also bring testNG and its own
+                    JUnit version, and we do not want that.
+                    -->
+                    <exclusion>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-testng</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-test</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-test-junit5</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
