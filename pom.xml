@@ -154,7 +154,7 @@
             <dependency>
                 <groupId>edu.ucar</groupId>
                 <artifactId>netcdf4</artifactId>
-                <version>5.5.2</version>
+                <version>${ucar-netcdf.version}</version>
             </dependency>
             <dependency>
                 <groupId>edu.ucar</groupId>
