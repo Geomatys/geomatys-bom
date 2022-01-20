@@ -68,6 +68,9 @@
 
         <ucar-netcdf.version>5.5.2</ucar-netcdf.version>
         <ucar.jj2000.version>5.4</ucar.jj2000.version>
+        <!-- Sync with the version used by UCAR NetCDF -->
+        <guava.version>30.1-jre</guava.version>
+        <jimfs.version>1.2</jimfs.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -157,6 +160,27 @@
                 <groupId>edu.ucar</groupId>
                 <artifactId>jj2000</artifactId>
                 <version>${ucar.jj2000.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.jimfs</groupId>
+                <artifactId>jimfs</artifactId>
+                <version>${jimfs.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <!-- Exclude because we want JRE version, not android -->
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>guava</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
