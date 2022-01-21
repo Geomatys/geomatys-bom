@@ -33,7 +33,7 @@
         <repository>
             <id>geomatys.public</id>
             <name>Geomatys public release repository</name>
-            <url>https://nexus.geomatys.com/repository/releases</url>
+            <url>https://nexus.geomatys.com/repository/maven-public</url>
         </repository>
         <repository>
             <id>unidata-all</id>
