@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.geomatys</groupId>
     <artifactId>geomatys-bom</artifactId>
-    <version>2022.3-SNAPSHOT</version>
+    <version>2022.3</version>
     <packaging>pom</packaging>
     <name>geomatys-bom</name>
     <description>Geomatys third-party dependencies</description>
