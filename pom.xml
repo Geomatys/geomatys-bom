@@ -79,6 +79,8 @@
         <!-- Sync with the version used by UCAR NetCDF -->
         <guava.version>30.1-jre</guava.version>
         <jimfs.version>1.2</jimfs.version>
+
+        <jmh.version>1.34</jmh.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -189,6 +191,17 @@
                         <artifactId>guava</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jmh.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
