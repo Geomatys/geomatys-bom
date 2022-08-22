@@ -57,7 +57,7 @@
         Temporary overrides: Versions defined in Spring BOM, but not recent enough. When updating
         Spring BOM version, please check if these overrides are still needed. If not, remove them.
         -->
-        <hsqldb.version>2.6.1</hsqldb.version>
+        <hsqldb.version>2.7.0</hsqldb.version>
 
         <!-- Temporary overrides: we need OLDER version for now. Check if we can upgrade it in Geotoolkit and Examind community -->
         <elasticsearch.version>7.6.1</elasticsearch.version>
