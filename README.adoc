@@ -55,7 +55,7 @@ Then, there are two possible ways to apply this BOM:
             <dependency>
                 <groupId>com.geomatys</groupId>
                 <artifactId>geomatys-bom</artifactId>
-                <version>2022.4</version>
+                <version>2022.5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -71,7 +71,7 @@ Then, there are two possible ways to apply this BOM:
     <parent>
         <groupId>com.geomatys</groupId>
         <artifactId>geomatys-bom</artifactId>
-        <version>2022.1</version>
+        <version>2022.5</version>
     </parent>
     ...
 </project>
