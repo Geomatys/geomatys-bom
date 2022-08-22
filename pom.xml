@@ -88,7 +88,7 @@
                 <groupId>org.locationtech.jts</groupId>
                 <artifactId>jts-core</artifactId>
                 <optional>false</optional>
-                <version>1.18.2</version>
+                <version>1.19.0</version>
             </dependency>
 
             <!-- TODO: remove in the future. Used by Examind-Community for custom behavior in CSW. -->
