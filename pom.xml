@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.7.3</version>
+        <version>2.7.7</version>
     </parent>
     <groupId>com.geomatys</groupId>
     <artifactId>geomatys-bom</artifactId>
@@ -57,7 +57,7 @@
         Temporary overrides: Versions defined in Spring BOM, but not recent enough. When updating
         Spring BOM version, please check if these overrides are still needed. If not, remove them.
         -->
-        <hsqldb.version>2.7.0</hsqldb.version>
+        <hsqldb.version>2.7.1</hsqldb.version>
 
         <!-- Temporary overrides: we need OLDER version for now. Check if we can upgrade it in Geotoolkit and Examind community -->
         <elasticsearch.version>7.6.1</elasticsearch.version>
@@ -148,7 +148,7 @@
 
             <!--
             For now, we don't use UCAR BOM, because it might erase dependency versions from Spring.
-            We depends mostly of Spring for our products, so it must take precedence.
+            We depend mostly on Spring for our products, so it must take precedence.
             -->
             <dependency>
                 <groupId>edu.ucar</groupId>
