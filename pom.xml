@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.7.7</version>
+        <version>3.0.6</version>
     </parent>
     <groupId>com.geomatys</groupId>
     <artifactId>geomatys-bom</artifactId>
@@ -95,7 +95,7 @@
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
-                <version>${javax-jaxb.version}</version>
+                <version>${glassfish-jaxb.version}</version>
             </dependency>
 
             <dependency>
@@ -116,7 +116,7 @@
             </dependency>
 
             <dependency>
-                <groupId>org.codehaus.groovy</groupId>
+                <groupId>org.apache.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
                 <version>${groovy.version}</version>
                 <type>pom</type> <!-- See https://groovy.apache.org/download.html#buildtools -->
@@ -126,15 +126,15 @@
                     JUnit version, and we do not want that.
                     -->
                     <exclusion>
-                        <groupId>org.codehaus.groovy</groupId>
+                        <groupId>org.apache.groovy</groupId>
                         <artifactId>groovy-testng</artifactId>
                     </exclusion>
                     <exclusion>
-                        <groupId>org.codehaus.groovy</groupId>
+                        <groupId>org.apache.groovy</groupId>
                         <artifactId>groovy-test</artifactId>
                     </exclusion>
                     <exclusion>
-                        <groupId>org.codehaus.groovy</groupId>
+                        <groupId>org.apache.groovy</groupId>
                         <artifactId>groovy-test-junit5</artifactId>
                     </exclusion>
                 </exclusions>
