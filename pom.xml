@@ -73,7 +73,7 @@
         <ucar.jj2000.version>5.4</ucar.jj2000.version>
         <!-- Sync with the version used by UCAR NetCDF -->
         <guava.version>30.1-jre</guava.version>
-        <jimfs.version>1.3</jimfs.version>
+        <jimfs.version>1.3.0</jimfs.version>
 
         <jmh.version>1.34</jmh.version>
     </properties>
