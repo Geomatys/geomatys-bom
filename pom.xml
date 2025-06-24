@@ -6,11 +6,11 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.3</version>
     </parent>
     <groupId>com.geomatys</groupId>
     <artifactId>geomatys-bom</artifactId>
-    <version>2025.1</version>
+    <version>2025.2</version>
     <packaging>pom</packaging>
     <name>geomatys-bom</name>
     <description>Geomatys third-party dependencies</description>
