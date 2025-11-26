@@ -92,13 +92,6 @@
                 <version>${jts.version}</version>
             </dependency>
 
-            <!-- TODO: remove in the future. Used by Examind-Community for custom behavior in CSW. -->
-            <dependency>
-                <groupId>com.sun.xml.bind</groupId>
-                <artifactId>jaxb-impl</artifactId>
-                <version>${javax-jaxb.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
