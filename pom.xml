@@ -52,8 +52,6 @@
     </repositories>
 
     <properties>
-        <commons-io.version>2.11.0</commons-io.version>
-
         <!-- Temporary overrides: we need OLDER version for now. Check if we can upgrade it in Geotoolkit and Examind community -->
         <elasticsearch.version>7.6.1</elasticsearch.version>
 
@@ -132,12 +130,6 @@
                         <artifactId>groovy-test-junit5</artifactId>
                     </exclusion>
                 </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
             </dependency>
 
             <!--
